@@ -39,3 +39,10 @@ API keys stay in memory and are not persisted. The app contains no real patient,
 `flutter build web --release` creates an independently hostable static app under `build/web`. GitHub Pages can serve that build; it cannot run the C# API. See `VALIDATION.md` for the checks actually executed.
 
 Reference: [Flutter web build and deployment](https://docs.flutter.dev/deployment/web).
+
+## Live demonstration
+
+[Try the companion in your browser](https://kawmy.github.io/demos/tenantflow/). The hosted demo uses synthetic in-memory data.
+
+![Flutter companion running with synthetic tasks](docs/preview.jpg)
+

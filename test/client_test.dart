@@ -86,6 +86,17 @@ void main() {
       throwsA(isA<ApiException>()),
     );
   });
+  test('optional API description is normalized for a readable task', () {
+    final item = WorkItem.fromJson({
+      'id': 'api-task',
+      'title': 'Live API task',
+      'description': null,
+      'status': 0,
+      'version': 1,
+    });
+    expect(item.description, isEmpty);
+    expect(item.title, 'Live API task');
+  });
   test('unknown API status is rejected', () {
     expect(
       () => WorkItem.fromJson({

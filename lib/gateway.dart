@@ -32,7 +32,7 @@ class HttpWorkGateway implements WorkGateway {
         baseUri.hasQuery ||
         baseUri.hasFragment ||
         (baseUri.path.isNotEmpty && baseUri.path != '/')) {
-      throw ArgumentError('Use an API origin, such as http://127.0.0.1:5086.');
+      throw ArgumentError('Use an API origin, such as http://127.0.0.1:5088.');
     }
   }
   Map<String, String> get _headers => {

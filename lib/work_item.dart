@@ -14,7 +14,7 @@ class WorkItem {
   factory WorkItem.fromJson(Map<String, dynamic> value) {
     final id = value['id'];
     final title = value['title'];
-    final description = value['description'];
+    final description = value['description'] ?? '';
     final status = value['status'];
     final version = value['version'];
     if (id is! String ||
