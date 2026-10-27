@@ -13,7 +13,7 @@ flutter test
 flutter run -d chrome --web-port 5090 --web-hostname 127.0.0.1
 ```
 
-The app starts with clearly labeled, in-memory demo data. It does not contact a server until you open **Connect to the C# API** and choose **Connect API**. Start [TenantFlow](https://github.com/kawmy/tenantflow-dotnet) in Development on port 5088, then use origin `http://127.0.0.1:5088` and development fixture key `tenant-alpha-key`. These published keys identify synthetic local tenants; they are not production credentials. The API allows only the two documented localhost origins on port 5090 in Development.
+The app starts with clearly labeled, in-memory demo data. It does not contact a server until you open **Connect to the C# API** and choose **Connect API**. Start [TenantFlow](https://github.com/armawndow/tenantflow-dotnet) in Development on port 5088, then use origin `http://127.0.0.1:5088` and development fixture key `tenant-alpha-key`. These published keys identify synthetic local tenants; they are not production credentials. The API allows only the two documented localhost origins on port 5090 in Development.
 
 For an Android emulator, generate platform scaffolding with `flutter create --platforms=android,ios .` and connect to host origin `http://10.0.2.2:5088`, with a development-only reachable API binding. Platform signing, transport policy, device networking and production authentication must be configured for a native release. Android/iOS builds and physical-device operation have not been validated. The committed Flutter UI and client are platform-independent; the executed build is web.
 
@@ -42,7 +42,7 @@ Reference: [Flutter web build and deployment](https://docs.flutter.dev/deploymen
 
 ## Live demonstration
 
-[Try the companion in your browser](https://kawmy.github.io/demos/tenantflow/). The hosted demo uses synthetic in-memory data.
+[Try the companion in your browser](https://armawndow.github.io/demos/tenantflow/). The hosted demo uses synthetic in-memory data.
 
 ![Flutter companion running with synthetic tasks](docs/preview.jpg)
 
